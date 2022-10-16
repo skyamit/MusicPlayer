@@ -1,146 +1,234 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="icons/css/font-awesome.min.css">
-	</head>
-	<body>
-		<header>
-			<div class="inline">
-				<div id="icon" >
-					<div class="inline">
-						<h3>Music</h3>
-					</div>
-					<div class="inline">
-						<i class="fa fa-play fa-2x" aria-hidden="true"></i>
-					</div>
-				</div>
-			</div>
-			<div class="inline" id="search">
-				<form>
-					<input class="inline" id="songName" type="text" name="songName"/>
-					<button class="inline" id="searchButton">Search</button>
-				</form>
-			</div>
-			<div class="inline" id="profile">
-				<img id="profileImg" src="C:\Users\amin0004\Desktop\Let'sTry\image\Mitwa.jfif" alt="profile"/>
-			</div>
-		</header>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="player">
+    <div id="start-player">
+      <div id="player-image">
+        <img class="rotate" id="player-icon" src="https://c-fa.cdn.smule.com/rs-s77/arr/33/61/ca3ad46d-f27d-4d3c-bc35-2082ebf7977e_1024.jpg" alt="image"/>
+      </div>
+      <div id="player-song-name"><h3>Teri Jhuki Nazar</h3></div>
+    </div>
+    <div id="song-controller">
+      <div><h3>01:44</h3></div>
+      <div>
+        <input id="songs-control" type="range" />
+      </div>
+      <div><h3 style="margin-left:10px">04:44</h3></div>
+    </div>
+    <div id="volume-controller">
+      <div>
+        <img id="volume-image" src="https://img.icons8.com/external-solid-adri-ansyah/2x/external-iphone-smartphone-apps-solid-adri-ansyah-19.png" alt="volume" />
+      </div>
+      <div>
+        <input id="volume-control" type="range" />
+      </div>
+    </div>
+  </div>
+  <div id="header">
+    <div>
+      <img id="icon" src="https://img.icons8.com/glyph-neue/344/youtube-squared.png" alt="icon">
+    </div>
+    <div>
+      <a href="links">
+        <span class="header-link">SONGS</span>
+      </a>
+      <a href="albums">
+        <span class="header-link">ALBUMS</span>
+      </a>
+    </div>
+    <div id="search-div">
+        <img id="song-icon" src="https://img.icons8.com/ios-filled/344/easy-listening.png" alt="search">
+        <input type="text" style="margin-top:0px" placeholder="Search..." />
+        <img id="song-icon" src="https://img.icons8.com/material/344/search--v1.png" alt="search">
+    </div>
+    <div>
+      <img id="icon" src="https://img.icons8.com/doodle/344/user-male-circle.png" alt="icon">
+    </div>
+  </div>
+  <hr>
+  <div id="body">
+    <div id="songs">
+      <div id="current-playing">
+          <img id="current-song" src="https://photo-cdn2.icons8.com/Esu6dhrY5Nd3V7VkNjza6TXsU-XhW742lsHIBk8llUw/rs:fit:576:384/czM6Ly9pY29uczgu/bW9vc2UtcHJvZC5l/eHRlcm5hbC9hMmE0/Mi8xNjhlMDI5MDA1/MTg0MjljYTljNDk4/YjUyY2UwZGI2ZC5q/cGc.webp" alt="img" />
+      </div>
+      <div id="current-playing-text">
+        <img id="playing-icon" src="https://icons8.com/vue-static/landings/animated-icons/icons/sound/sound_200.gif/">
+        <h2>Teri Jhuki Nazar</h2>
+      </div>
+      <div id="queued-songs">
+        <div class="song">
+          <div class="song-text"><h3>1.</h3></div>
+          <div class="song-icon">
+           <img class="song-image" src="https://c.saavncdn.com/472/Ekk-Deewana-Tha-Hindi-2012-20190603133056-500x500.jpg" alt="song1" />
+          </div>
+          <div class="song-text"><h3>Hossana<h3></div>
+          <div class="song-time"><h3>4:44<h3></div>
+        </div>
+            
+        <div class="song">
+          <div class="song-text"><h3>2.</h3></div>
+          <div class="song-icon">
+           <img class="song-image" src="https://c-fa.cdn.smule.com/rs-s84/arr/c5/e5/f2b5de6c-2b5b-4e60-8f30-145055ec70f3_1024.jpg" alt="song1" />
+          </div>
+          <div class="song-text"><h3>Aa bhi ja<h3></div>
+          <div class="song-time"><h3>4:44<h3></div>
+        </div>
+      </div>
+        <div class="song">
+          <div class="song-text"><h3>3.</h3></div>
+          <div class="song-icon">
+           <img class="song-image" src="https://a10.gaanacdn.com/gn_img/albums/Oxd3xzPbgV/xd3xQDNlWg/size_m_1535367649.webp" alt="song1" />
+          </div>
+          <div class="song-text"><h3>Tune mere jaana<h3></div>
+          <div class="song-time"><h3>4:44<h3></div>
+        </div>
+        <div class="song">
+          <div class="song-text"><h3>4.</h3></div>
+          <div class="song-icon">
+           <img class="song-image" src="https://i.ytimg.com/vi/kut3TKQFO0w/hqdefault.jpg" alt="song1" />
+          </div>
+          <div class="song-text"><h3>Sadi gali aa ja sanu<h3></div>
+          <div class="song-time"><h3>4:44<h3></div>
+        </div>
+    </div>
+    <div id="history">
+      <div id="recently-played">
+        <div> <h3>Recently Played</h3></div>    
+        <div class="song">
+          <div class="song-text"><h3>1.</h3></div>
+          <div class="song-icon">
+           <img class="song-image" src="https://i.scdn.co/image/ab67616d0000b27359d29f513c7f9cf74ffd1ac9" alt="song1" />
+          </div>
+          <div class="song-text"><h3>Jaane kya dhoondhta hai dil mera<h3></div>
+          <div class="song-time" ><h3>5:10<h3></div>
+        </div>
+        <div class="song">
+          <div class="song-text"><h3>2.</h3></div>
+          <div class="song-icon">
+           <img class="song-image" src="https://c.saavncdn.com/792/Tum-Bin-Hindi-2001-20180406-500x500.jpg" alt="song1" />
+          </div>
+          <div class="song-text"><h3>Koi faryaad<h3></div>
+          <div class="song-time"><h3>4:44<h3></div>
+        </div>
+        <div class="song">
+          <div class="song-text"><h3>3.</h3></div>
+          <div class="song-icon">
+           <img class="song-image" src="https://images.genius.com/d57855da6a6000e9683cda0a12089ace.999x999x1.jpg" alt="song1" />
+          </div>
+          <div class="song-text"><h3>O Sanam<h3></div>
+          <div class="song-time"><h3>4:40<h3></div>
+        </div>
+        <div class="song">
+          <div class="song-text"><h3>4.</h3></div>
+          <div class="song-icon">
+           <img class="song-image" src="https://i.ytimg.com/vi/jVPyBCrapoI/maxresdefault.jpg" alt="song1" />
+          </div>
+          <div class="song-text"><h3>Ek pal ka jeena<h3></div>
+          <div class="song-time"><h3>4:20<h3></div>
+        </div>
+      </div>
+      <div id="similar-artist">
+        <div>
+          <h3>Similar Artist</h3>
+        </div>
+        <div class="song">
+          <div class="song-text"><h3>1.</h3></div>
+          <div class="song-icon">
+           <img class="song-image" src="https://wikibio.in/wp-content/uploads/2019/04/Abhijeet.jpg" alt="song1" />
+          </div>
+          <div class="song-text"><h3>Abhijeet Bhattacharya<h3></div>
+        </div>
+        <div class="song">
+          <div class="song-text"><h3>2.</h3></div>
+          <div class="song-icon">
+           <img class="song-image" src="https://i.scdn.co/image/ab6761610000e5eb875b10d00c63ddc499da683e" alt="song1" />
+          </div>
+          <div class="song-text"><h3>Falguni Pathak<h3></div>
+        </div>
+        <div class="song">
+          <div class="song-text"><h3>3.</h3></div>
+          <div class="song-icon">
+           <img class="song-image" src="https://i.scdn.co/image/ab6761610000e5ebc9195a5d4f010306ec5e0ff5" alt="song1" />
+          </div>
+          <div class="song-text"><h3>Lucky Ali<h3></div>
+        </div>
+        <div class="song">
+          <div class="song-text"><h3>4.</h3></div>
+          <div class="song-icon">
+           <img class="song-image" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Sonu_Nigam121.jpg" alt="song1" />
+          </div>
+          <div class="song-text"><h3>Sonu Nigam<h3></div>
+        </div>
+        <div class="song">
+          <div class="song-text"><h3>5.</h3></div>
+          <div class="song-icon">
+           <img class="song-image" src="https://i.scdn.co/image/ab6761610000e5ebdabfae773eb394faadffc188" alt="song1" />
+          </div>
+          <div class="song-text"><h3>Armaan Malik<h3></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <div id="footer">
+    <div id="footer-links">
+      <div> 
+        <h3 class="link-tag">Latest Albums</h3>
+        <a href="album">
+          <h3>Album 1</h3>
+        </a>
+        <a href="album">
+          <h3>Album 2</h3>
+        </a>
+        <a href="album">
+          <h3>Album 3</h3>
+        </a>
+      </div>
+      <div> 
+        <h3 class="link-tag">Latest Songs</h3>
+        <a href="album">
+          <h3>Songs 1</h3>
+        </a>
+        <a href="album">
+          <h3>Songs 2</h3>
+        </a>
+        <a href="album">
+          <h3>Songs 3</h3>
+        </a>
+      </div>
+      <div> 
+        <h3 class="link-tag">Most Visited Links</h3>
+        <a href="album">
+          <h3>Famous superhit songs</h3>
+        </a>
+        <a href="album">
+          <h3>Songs of Arjit singh</h3>
+        </a>
+        <a href="album">
+          <h3>English Hits</h3>
+        </a>
+      </div>
+      <div> 
+        <h3 class="link-tag">Artists</h3>
+        <a href="album">
+          <h3>Abhijeet Bhattacharya</h3>
+        </a>
+        <a href="album">
+          <h3>Falguni Pathak</h3>
+        </a>
+        <a href="album">
+          <h3>Lucky Ali</h3>
+        </a>
+      </div>
+    </div>
+    <div id="copyright">
+      Copyright Amit@2022
+    </div>
+  </div>
 
-		<div id="main">
-			<div id="left" class="inline">
-				<div id="photoSlide" >				
-					<div id="slideLeft" class="inline">
-						<img src="C:\Users\amin0004\Desktop\Let'sTry\image\chaleChalo.jfif" alt="leftImage">
-					</div>
-					<div id="slideRight" class="inline">
-						<img src="C:\Users\amin0004\Desktop\Let'sTry\image\chaleChalo.jfif" alt="rightImage">
-					</div>
-				</div>
-				<div id="album">
-					<div class="inline albumDiv">
-						<img class="albumImg" src="C:\Users\amin0004\Desktop\Let'sTry\image\Mitwa.jfif" alr="songs">
-						<h3>Arjit Singh</h3>
-					</div>
-					<div class="inline albumDiv">
-						<img class="albumImg" src="C:\Users\amin0004\Desktop\Let'sTry\image\Mitwa.jfif" alr="songs">
-						<h3>Arjit Singh</h3>
-					</div>
-					<div class="inline albumDiv">
-						<img class="albumImg" src="C:\Users\amin0004\Desktop\Let'sTry\image\Mitwa.jfif" alr="songs">
-						<h3>Arjit Singh</h3>
-					</div>
-					<div class="inline albumDiv">
-						<img class="albumImg" src="C:\Users\amin0004\Desktop\Let'sTry\image\Mitwa.jfif" alr="songs">
-						<h3>Arjit Singh</h3>
-					</div>
-					<div class="inline albumDiv">
-						<img class="albumImg" src="C:\Users\amin0004\Desktop\Let'sTry\image\Mitwa.jfif" alr="songs">
-						<h3>Arjit Singh</h3>
-					</div>
-					<div class="inline albumDiv">
-						<img class="albumImg" src="C:\Users\amin0004\Desktop\Let'sTry\image\Mitwa.jfif" alr="songs">
-						<h3>Arjit Singh</h3>
-					</div>
-					<div class="inline albumDiv">
-						<img class="albumImg" src="C:\Users\amin0004\Desktop\Let'sTry\image\Mitwa.jfif" alr="songs">
-						<h3>Arjit Singh</h3>
-					</div>
-					<div class="inline albumDiv">
-						<img class="albumImg" src="C:\Users\amin0004\Desktop\Let'sTry\image\Mitwa.jfif" alr="songs">
-						<h3>Arjit Singh</h3>
-					</div>
-				</div>
-
-				<div id="artists">
-					<div class="inline artistDiv">
-						<img class="artistImg" src="C:\Users\amin0004\Desktop\Let'sTry\image\Mitwa.jfif" alr="songs">
-						<h3>Pyar Tune</h3>
-					</div>
-					<div class="inline artistDiv">
-						<img class="artistImg" src="C:\Users\amin0004\Desktop\Let'sTry\image\Mitwa.jfif" alr="songs">
-						<h3>Pyar Tune</h3>
-					</div>
-					<div class="inline artistDiv">
-						<img class="artistImg" src="C:\Users\amin0004\Desktop\Let'sTry\image\Mitwa.jfif" alr="songs">
-						<h3>Pyar Tune</h3>
-					</div>
-					<div class="inline artistDiv">
-						<img class="artistImg" src="C:\Users\amin0004\Desktop\Let'sTry\image\Mitwa.jfif" alr="songs">
-						<h3>Pyar Tune</h3>
-					</div>
-					<div class="inline artistDiv">
-						<img class="artistImg" src="C:\Users\amin0004\Desktop\Let'sTry\image\Mitwa.jfif" alr="songs">
-						<h3>Pyar Tune</h3>
-					</div>
-					<div class="inline artistDiv">
-						<img class="artistImg" src="C:\Users\amin0004\Desktop\Let'sTry\image\Mitwa.jfif" alr="songs">
-						<h3>Pyar Tune</h3>
-					</div>
-					<div class="inline artistDiv">
-						<img class="artistImg" src="C:\Users\amin0004\Desktop\Let'sTry\image\Mitwa.jfif" alr="songs">
-						<h3>Pyar Tune</h3>
-					</div>
-					<div class="inline artistDiv">
-						<img class="artistImg" src="C:\Users\amin0004\Desktop\Let'sTry\image\Mitwa.jfif" alr="songs">
-						<h3>Pyar Tune</h3>
-					</div>
-				</div>
-			</div>
-			<div id="right" class="inline" stle="float:right">
-				<div class="song">
-					<img src="C:\Users\amin0004\Desktop\Let'sTry\image\chakDe.jfif" class="inline songImg" alt="song" />
-					<h5 class="inline" >Chak De India</h5>
-				</div>
-				<div class="song">
-					<img src="C:\Users\amin0004\Desktop\Let'sTry\image\chakDe.jfif" class="inline songImg" alt="song" />
-					<h5 class="inline" >Chak De India</h5>
-				</div>
-				<div class="song">
-					<img src="C:\Users\amin0004\Desktop\Let'sTry\image\chakDe.jfif" class="inline songImg" alt="song" />
-					<h5 class="inline" >Chak De India</h5>
-				</div>
-				<div class="song">
-					<img src="C:\Users\amin0004\Desktop\Let'sTry\image\chakDe.jfif" class="inline songImg" alt="song" />
-					<h5 class="inline" >Chak De India</h5>
-				</div>
-				<div class="song">
-					<img src="C:\Users\amin0004\Desktop\Let'sTry\image\chakDe.jfif" class="inline songImg" alt="song" />
-					<h5 class="inline" >Chak De India</h5>
-				</div>
-				<div class="song">
-					<img src="C:\Users\amin0004\Desktop\Let'sTry\image\chakDe.jfif" class="inline songImg" alt="song" />
-					<h5 class="inline" >Chak De India</h5>
-				</div>
-			</div>
-		</div>
-		<div id="player">
-			<audio controls>
-			  	<source src="horse.mp3" type="audio/mpeg">
-				Your browser does not support the audio element.
-			</audio>
-		</div>
-		<footer>
-			<h2>Footer</h2>
-		</footer>
-	</body>
+</body>
 </html>
