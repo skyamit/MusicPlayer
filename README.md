@@ -1,5 +1,5 @@
 # MusicPlayer
 
-Creating a music player so that we can play music with the help of this website.
+Creating a front end view based on HTML and CSS to Learn more.
 
 Live at : https://musicfake.netlify.app/
